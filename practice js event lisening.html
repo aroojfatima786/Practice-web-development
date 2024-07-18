@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listening
+    </title>
+</head>
+<body>
+    <!--Broswer event
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    
+    submit
+    focus
+    
+    Dom content loaded
+    
+    traitioned-->
+    <div class="container">
+    <h1>
+        this is heading
+    </h1>
+    <p id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus reiciendis hic alias inventore adipisci! Culpa, minus neque, nulla odit reiciendis fugiat modi explicabo veniam fugit aliquid quam mollitia blanditiis quasi totam quaerat molestias. Atque.
+    </p>
+    
+</div>
+<button id ="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+        let para =document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            alert('Mouse Inside');
+        });
+        para.addEventListener('mouseout',function run(){
+            alert('Mouse Outside');
+        });
+        function toggleHide(){
+                   let btn=document.getElementById('btn');
+                   let para = document.getElementById('para');
+                   if (para.style.display!='none'){
+                   para.style.display='none';}
+                   else{
+                         para.style.display='block';
+                   }
+ 
+         }
+ 
+
+     </script>
+</body>
+</html>

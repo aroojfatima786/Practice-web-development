@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li> Home </li>
+            <li >About us</li>
+            <li >Services</li>
+            <li >Contact us</li>
+        </ul>
+    </div>
+ 
+    <script>
+let main=document.getElementById('main');
+console.log(main);
+
+let nav=document.getElementById('nav');
+console.log(nav);
+let friends=["Arooj","Laiba","Habiba","Areej"];
+ for (let i = 0; i < friends.length; i++) {
+    console.log("Hello , " + friends[i]); 
+ }
+friends.forEach(function f(element) {
+    console.log("hello " + element);
+});
+let employee={
+    name:"arooj",
+    salary:89,
+    chw:2,
+}
+for(key in employee){
+    console.log(`The ${key} of employee is ${employee[key]}`);
+}
+let i=0;
+while(i<4){
+    console.log(`${i} is less than four`);
+    i++;
+}
+let j=0;
+do{
+    console.log(`${j} is less than four`);
+    j++;
+}while(j<4);
+     </script>
+</body>
+</html>

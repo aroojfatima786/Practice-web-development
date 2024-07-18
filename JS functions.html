@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li> Home </li>
+            <li >About us</li>
+            <li >Services</li>
+            <li >Contact us</li>
+        </ul>
+    </div>
+ 
+    <script>
+let main=document.getElementById('main');
+console.log(main);
+
+let nav=document.getElementById('nav');
+console.log(nav);
+
+//function
+function greet(name,greettext1){
+    console.log (greettext1  + " "  + name) ;
+        console.log (name + "is a good girl") ;
+    }
+    let name ="Arooj";
+    let name1 ="Laiba";
+    let name2 ="Habiba";
+    let greettext="Good morning";
+greet(name,greettext);
+greet(name1,greettext);
+greet(name2,greettext);
+
+function sum(a,b,c){
+let d=a+b+c;
+return d;
+}
+let returnval= sum(1,2,3);
+console.log(returnval);*/
+
+ //Alert in browser
+alert("This is a message");
+//prompt
+let names =prompt("What is your name","Guest");
+ console.log(names);
+let deletePost=prompt("what is your age"," ");
+console.log(deletePost)
+ if(deletePost>18){
+    console.log("you are allowed");
+ }
+ else{
+    console.log("not allowed");
+ }
+</script>
+</body>
+</html>
